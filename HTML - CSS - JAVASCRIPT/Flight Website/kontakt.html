@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- linker css filen med html -->
+</head>
+<body>
+	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+	  <img src="Bilder/Logo.png" class="logo">
+	  <!-- linker sidene sammen -->
+	  <a href="Index.html">About</a>
+	  <a href="reise.html">Book flight</a>
+	  <a href="tips.html">Guide</a>
+	  <a href="kontakt.html" style="border-bottom: 2px solid white;">Contact</a> <!-- Når du er på denne siden er det en liten hvit understrek på navbaren -->
+
+	  <input type="text" placeholder="Type here" id="inpSok">
+   	  <button type="submit" id="btnSok" onclick="sok()">Search</button> <!-- Funksjonen sok() kjøres når knappen trykkes --> 
+
+   	  <a href="login.html" id="aLog">LOG IN</a>
+	</div>
+	<!----------------------------------------->
+	
+	<img src="bilder/conBakgrunn.jpg" id="imgCon">
+
+	<div id="divKontakt"> <!-- Kontakt diven -->
+		<h1 id="conOverskrift">CONTACT US</h1>
+		<p class="pCon">Get in touch with us at Beyond Borders through any of the following contact options</p>
+		<p class="pCon">We're available 24/7 to assist you with any inquiries or concerns you may have</p>
+
+		<div id="divLogoer"> <!-- Logo diven der adress, mobil og email blir plassert -->
+			<div id="divAdress">
+				<figure> <!-- Bruker figure sånn jeg kan få bildetekst under bildet -->
+					<img src="Bilder/adress.png" class="imgLogoer" id="imgAdress">
+					<figcaption class="figLogo">ADDRESS</figcaption> <!-- Bildeteksten som vises under bildet  -->
+					<p class="pFigLogo">3300 Duncan Avenue</p>
+				</figure>
+			</div>
+
+			<div id="divPhone">
+				<figure>
+					<img src="Bilder/phone.png" class="imgLogoer">
+					<figcaption class="figLogo">PHONE</figcaption>
+					<p class="pFigLogo">+47 983 55 088</p>
+				</figure>
+			</div>
+
+			<div id="divEmail">
+				<figure>
+					<img src="Bilder/email.png" class="imgLogoer" id="imgEmail">
+					<figcaption class="figLogo">EMAIL</figcaption>
+					<p class="pFigLogo">beyondbusiness@info.com</p>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script> <!-- linker script filen til html -->
+</body>
+</html>

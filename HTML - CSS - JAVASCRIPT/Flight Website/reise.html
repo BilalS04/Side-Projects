@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Book flight</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- linker css filen med html -->
+</head>
+<body>
+	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+	  <img src="Bilder/Logo.png" class="logo">
+	  <!-- linker sidene sammen -->
+	  <a href="Index.html">About</a>
+	  <a href="reise.html" style="border-bottom: 2px solid white;">Book flight</a> <!-- Når du er på denne siden er det en liten hvit understrek på navbaren -->
+	  <a href="tips.html">Guide</a>
+	  <a href="kontakt.html">Contact</a>
+
+	  <input type="text" placeholder="Type here" id="inpSok">
+   	  <button type="submit" id="btnSok" onclick="sok()">Search</button> <!-- Funksjonen sok() kjøres når knappen trykkes --> 
+
+   	  <a href="login.html" id="aLog">LOG IN</a>
+	</div>
+	<!----------------------------------------->
+
+	<!-------------------- Flyreise - Skjema --------------------->
+	<h1>Get ready to explore Scandinavia &#128747;</h1>
+	<div id="divReise"> <!-- Bestilling diven -->
+		<h2>Book your flight here</h2>
+		<form id="frmFlyreise"> <!-- Skjema for å bestille flyreise -->
+			<label for="velgFlyplassUtreise">Fly from:</label> <!-- Teksten som skal stå ved siden av nedtrekkslisten -->
+			<select id="velgFlyplassUtreise" required> <!-- Nedtrekksliste der brukeren velger hvor han/hun vil reise fra -->
+				<!-- Alternativene bruker kan velge mellom -->
+				<option value=""> Choose Airport</option>
+				<option value="Norge">Norway</option>
+				<option value="Sverige">Sweden</option>
+				<option value="Dannmark">Denmark</option>
+				<!-- ------------------------------------ -->
+			</select>
+
+			<label for="velgFlyplassTil">Fly to:</label>
+			<select id="velgFlyplassTil" required> <!-- Required gjør at bruker må velge/fylle input elmentet -->
+			<option value=""> Choose Airport</option>
+				<option value="Dannmark">Denmark</option>
+				<option value="Norge">Norway</option>
+				<option value="Sverige">Sweden</option>
+			</select>
+
+			<!-- Input elementer: tekst, nummer, dato, radioknapp, avmerkingsboks -->
+			<br><label for="inpUtdato">Select date of departure:</label>
+			<input type="date" id="inpUtdato" required>
+			<br><label for="inpReturdato">Select date for return:</label>
+			<input type="date" id="inpReturdato">
+
+			<br><label for="inpAntVoksne">Amount of adults: </label>
+			<input type="number" id="inpAntVoksne" min="1" value="1" max="10" required> <!-- Må være minst 1 voksen  -->
+			<label for="inpAntBarn">Amount of children: </label>
+			<input type="number" id="inpAntBarn" min="0" value="0" max="10" required>
+
+			<br><label for="rbTR">Round trip</label>
+			<input type="radio" name="rbgType" id="rbTR" checked> <!-- Radioknappen er allerede checked så brukeren må velge en av de  --> 
+			<label for="rbEnVei">One way</label>
+			<input type="radio" name="rbgType" id="rbEnVei"><br>
+
+			<label for="cbLeiebil">Include rental car</label>
+			<input type="checkbox" id="cbLeiebil">
+			<label for="cbHotell">Include hotel</label>
+			<input type="checkbox" id="cbHotell">
+
+			<audio id="lyd" src="Lyd/click.mp3"></audio> <!-- En klikke lyd  -->
+			<br><button type="submit" id="btnSokFly"><b>Search flight</b></button>
+			<!-- --------------------------------------------------------------- -->
+		</form>
+	</div>
+		<div id="divInfo"> <!-- Billett diven -->
+			<h2>Your ticket:</h2>
+			<button type="submit" id="btnBetal" onclick="betal()"><b>Checkout</b></button> <!-- Funksjonen betal() kjøres når knappen trykkes -->
+		</div>
+
+	<script type="text/javascript" src="script.js"></script> <!-- linker script filen til html -->
+</body>
+</html>

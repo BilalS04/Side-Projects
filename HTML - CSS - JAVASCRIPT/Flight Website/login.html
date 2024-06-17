@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Log in / Sign up</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- linker css filen med html -->
+</head>
+<body>
+	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+	  <img src="Bilder/Logo.png" class="logo">
+	  <!-- linker sidene sammen -->
+	  <a href="Index.html">About</a>
+	  <a href="reise.html">Book flight</a>
+	  <a href="tips.html">Guide</a>
+	  <a href="kontakt.html">Contact</a>
+
+	  <input type="text" placeholder="Type here" id="inpSok">
+   	  <button type="submit" id="btnSok" onclick="sok()">Search</button> <!-- Funksjonen sok() kjøres når knappen trykkes --> 
+
+   	  <a href="login.html" id="aLog">LOG IN</a>
+	</div>
+	<!----------------------------------------->
+	<div id="divBakgrunn"> <!-- Bakgrunn diven -->
+		<div id="divLog"> <!-- Logg in / registrer diven som inneholder to skjemaer -->
+			<h1 id="logOver">Welcome back!</h1>
+			<p class="pLog">Please fill in the needed information below to log back in to your account</p>
+			<p class="pLog">Or</p>
+			<p class="pLog">If your new here create your new account today</p>
+
+			<div id="frmLog">
+				<form id="formLog"> <!-- Logg in skjema -->
+					<h2>Log in</h2>
+					<label for="inpUser">Username / Email</label><br>
+					<input type="text" id="inpUser" class="inpLog" placeholder="Type here" required><br> <!-- Brukernavn input -->
+					<label for="inpPass">Password</label><br>
+					<input type="password" id="inpPass" class="inpLog" placeholder="Type here" required><br> <!-- Passord input -->
+
+					<button type="submit" id="btnLog">Log in</button>
+					<h3 id="logRes"></h3> <!-- Tom underoverskrift der tekst kommer inn ved script -->
+				</form>
+			</div>
+
+			<div id="frmSign">
+				<form id="formSign"> <!-- Registrering skjema -->
+					<h2>Sign up</h2>
+
+					<!-- Input elementer: tekst, dato, nummer, radioknapp, passord -->
+					<label for="inpNavn">Name</label><br>
+					<input type="text" id="inpNavn" class="inpLog" placeholder="Type here" required><br>
+					<label for="inpFod">Date of birth</label><br>
+					<input type="date" id="inpFod" class="inpLog" placeholder="Type here" required><br>
+					<label for="inpNum">Phone number (optional)</label><br>
+					<input type="number" id="inpNum" class="inpLog" placeholder="Type here"><br>
+					<label for="rbTR"><b>Gender:</b> Male</label>
+					<input type="radio" name="rbgKjonn" id="rbM" checked>
+					<label for="rbEnVei">Female</label>
+					<input type="radio" name="rbgKjonn" id="rbF"><br>
+					<label for="inpSignUser">Username / Email</label><br>
+					<input type="text" id="inpSignUser" class="inpLog" placeholder="Type here" required><br>
+					<label for="inpSignPass">Password</label><br>
+					<input type="password" id="inpSignPass" class="inpLog" placeholder="Min 8 characters" minlength="8" required><br> <!-- Må være minst 8 bokstaver/tall -->
+					<label for="inpSignPass2">Verify password</label><br>
+					<input type="password" id="inpSignPass2" class="inpLog" placeholder="Type here" required><br>
+					<!-- --------------------------------------------------------------------------------------- -->
+					<button type="submit" id="btnSign">Create new account</button>
+					<h3 id="signRes"></h3> <!-- Tom underoverskrift der tekst kommer inn ved script -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="login-script.js"></script> <!-- linker script filen til html -->
+</body>
+</html>

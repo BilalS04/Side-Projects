@@ -1,0 +1,319 @@
+body {
+  background-color: black; /* Bakgrunnsfargen for alle sidene er svart */
+  color: white; /* Fargen til tekstene på alle sidene er hvit */
+}
+
+h1 {
+  text-align: center; /* Alle h1 overskriftene  blir plassert i midten */
+}
+
+h2 {
+  margin-top: 5px; /* Mellomrom fra toppen mellom h2 og en annen element */
+  padding: 10px 0px; /*Overskriften sitt mellomrom/* /*10px fra top og bunn, 0px fra venstre og høyre */
+}
+
+.navbar {
+  display: flex; /* Navbar skal være organisert i en flex-boks som gjør det enklere å justere layouten og plasseringen av elementene */
+  align-items: center; /* Elementene skal være sentrert vertikalt */
+  height: 100px;
+  background-color: black;
+  color: black;
+  padding: 0 20px; /*0px fra top og bunn, 20px fra venstre og høyre */
+  border-bottom: 4px solid white; /* En hvit strek under hele navbaren */
+}
+
+.logo {
+  width: 300px; /* Bredden til elementet */
+  height: 170px; /* Høyden til elementet */
+  margin-right: 300px; /* Mellomrommet fra høyre mellom logoen og linksene */
+}
+
+.navbar a { /* Linksene i navbaren */
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 18px; /* Størrelsen til teksten */
+}
+
+.navbar a:hover { /* Når musepekeren blir holdt over linksene i navbaren skal det under skje */
+  border-bottom: 2px solid white; /* En liten hvit understrek vises */
+}
+
+#inpSok { 
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#btnSok {
+  width: 54px;
+  height: 30px;
+  background-color: ghostwhite;
+  color: black;
+  border: none; /* Vil ikke ha noe ramme rundt seg */ 
+  cursor: pointer; /* Musepekeren skifter form når den blir holdt over knappen */
+}
+
+#divReise {
+  height: 500px;
+  width: 35%;
+  border: 5px solid white; /* Hvit ramme rundt diven */
+  padding: 20px;
+  position: relative; /* Gjør at elementet kan bli flyttet på */
+  margin-bottom: 100px;
+  float: left; /* Divene vises ved siden av hverandre og ikke under hverandre */
+  top: 60px; /* Flytter diven lengre ned */
+  left: 130px; /* Flytter diven lengre til venstre */
+}
+ 
+#btnSokFly {
+  background-color: ghostwhite;
+  margin-top: 15px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Det skal være liten mellomrom fra nede mellom select og disse input elementene */
+select,
+input[type="date"],
+input[type="number"],
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 15px;
+}
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+#divInfo {
+  visibility: hidden; /* Sjuler diven sånn den ikke vises */
+  font-size: 18px;
+  height: 500px;
+  width: 35%;
+  border: 5px solid white;
+  padding: 20px;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  top: 60px;
+  left: 200px;
+}
+
+#btnBetal {
+  background-color: ghostwhite;
+  margin-top: 15px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute; /* Knappen blir på et sted og blir ikke hindret av andre elementer */
+  top: 280px;
+}
+
+img {
+   height: 500px;
+   width: 450px;
+}
+
+.reise-1 {
+   border: 1px black solid;
+   padding: 2em;
+}
+
+.stor {
+   grid-column: span 2; /* Opptar to kolonner */
+}
+
+.headerp {
+   font-size: 26px;
+}
+
+.grid-container {
+   width: 80%;
+   margin-top: 25px;
+   margin: auto; /* Plasserer elementet i midten */
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* To like store kolonner, begge kolonnene vil ta opp like mye plass */
+   border-collapse: collapse;
+   margin-top: 25px;
+}
+
+.reise-img {
+   width: 95%;
+   margin: auto;
+}
+
+@media screen and (max-width: 800px) { /* Gjør at gridden blir smalere når nettsiden blir vist på telefonskjerm*/
+   .grid-container{
+       grid-template-columns: 1fr;
+   }
+   .stor {
+       grid-column: span 1;
+   }
+}
+
+#topbilde {
+ position: relative;
+ width: 100%;
+ aspect-ratio: 21 / 9; /* Gjør at elementet vil ha en bredde som er 21/9 (2.33) ganger høyden */
+ background-image: url('Bilder/fly.webp');
+ background-repeat: no-repeat;
+ background-size: cover; /* Gjør at bildet tar opp hele bredden */
+}
+
+#topbilde > h1 {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%); /* Gjør at diven kommer på midten (ved å flytte elementet 50% av bredden og 50% av høyden til venstre og opp) */
+ color: #fff;
+ font-size: 50px;
+ font-family: Arial, Helvetica, sans-serif;
+ mix-blend-mode: difference; /* GJør teksten får motsatt farge av bildet */
+}
+
+#topbilde + p { /* Alle <p>-elementer som er i diven topbilde */
+ width: 80%;
+ font-size: 1.5rem;
+ margin: 3rem auto;
+ line-height: 1.7; /* Linjehøyde */
+}
+
+#aLog {
+  border: 3.5px solid white;
+  margin-left: 18px;
+  padding: 6px;
+  padding-right: 9px;
+}
+
+#divLog {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  width: 60%;
+  height: 850px;
+  background-color: rgb(0, 0, 0); /* En annen måte å sette bakgrunnsfargen til svart */
+  margin-bottom: 100px;
+}
+
+#logOver {
+  padding-top: 60px;
+}
+
+.pLog {
+  text-align: center;
+  font-size: 17px;
+}
+
+#frmLog {
+  height: 530px;
+  width: 300px;
+  border: 5px solid lightgray;
+  position: relative;
+  float: left;
+  padding-left: 40px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+#frmSign {
+  height: 530px;
+  width: 300px;
+  border: 5px solid lightgray;
+  position: relative;
+  left: 110px;
+  float: left;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.inpLog {
+  margin-bottom: 10px;
+}
+
+#btnLog {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#btnSign {
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#divBakgrunn {
+  width: 100%;
+  height: 930px;
+  background-image: url(https://media.tenor.com/jWmfyhrj22cAAAAC/plane-flight.gif); /* Bakgrunnsbilde til login siden */
+  margin-top: -22px;
+}
+
+#imgCon {
+  width: 100%;
+  height: 500px;
+}
+
+#divKontakt {
+  background-color: black;
+  position: relative;
+  margin: auto;
+  top: -120px;
+  width: 50%;
+  height: 400px
+}
+
+#conOverskrift {
+  font-size: 35px;
+  padding-top: 40px;
+} 
+
+.pCon {
+  text-align: center;
+}
+
+#divLogoer {
+  position: relative;
+  left: 50px;
+}
+
+#divAdress {
+  position: relative;
+  float: left;
+}
+
+#divPhone {
+  position: relative;
+  float: left;
+}
+
+#divEmail {
+  position: relative;
+  float: left;
+}
+
+.imgLogoer {
+  position: relative;
+  padding-top: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+#imgEmail {
+  position: relative;
+  left: 35px;
+}
+
+#imgAdress {
+  position: relative;
+  left: 20px;
+}
+
+.figLogo {
+  font-size: 20px;
+  color: darkgray;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.pFigLogo {
+  text-align: center;
+}
+

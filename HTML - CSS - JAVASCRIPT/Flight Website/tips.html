@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Guide</title>
+   <link rel="stylesheet" type="text/css" href="styles.css"> <!-- linker css filen med html -->
+</head>
+<body>
+	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+	  <img src="Bilder/Logo.png" class="logo">
+      <!-- linker sidene sammen -->
+	  <a href="Index.html">About</a>
+	  <a href="reise.html">Book flight</a>
+	  <a href="tips.html" style="border-bottom: 2px solid white;">Guide</a> <!-- Når du er på denne siden er det en liten hvit understrek på navbaren -->
+	  <a href="kontakt.html">Contact</a>
+
+	  <input type="text" placeholder="Type here" id="inpSok">
+   	  <button type="submit" id="btnSok" onclick="sok()">Search</button> <!-- Funksjonen sok() kjøres når knappen trykkes --> 
+
+   	  <a href="login.html" id="aLog">LOG IN</a>
+	</div>
+	<!----------------------------------------->
+  
+   <div class="grid-container">
+       <div class="reise-1 stor">
+           <img class="reise-img" src="Bilder/scandic.jpg" alt="natur">
+           <p class="headerp">Lorem ipsum dolor sit amet doner.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam culpa error maiores enim lorem, ipsum dolor./p>
+       </div>
+       <div class="reise-1">
+           <img class="reise-img" src="Bilder/trolltungen.jpg" alt="natur">
+           <p class="headerp">Lorem ipsum dolor sit amet doner.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam culpa error maiores enim</p>
+       </div>
+       <div class="reise-1">
+           <img class="reise-img" src="Bilder/trolltungen.jpg" alt="natur">
+           <p class="headerp">Lorem ipsum dolor sit amet doner.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam culpa error maiores enim, Lorem ipsum dolor sit amet consectetur.</p>
+       </div>
+       <div class="reise-1">
+           <img class="reise-img" src="Bilder/trolltungen.jpg" alt="natur">
+           <p class="headerp">Lorem ipsum dolor sit amet doner.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam culpa error maiores enim</p>
+       </div>
+       <div class="reise-1">
+           <img class="reise-img" src="Bilder/trolltungen.jpg" alt="natur">
+           <p class="headerp">Lorem ipsum dolor sit amet doner.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam culpa error maiores enim lorem, ipsum.</p>
+       </div>
+   </div>
+   <script type="text/javascript" src="script.js"></script> <!-- linker script filen til html -->
+</body>
+</html>
