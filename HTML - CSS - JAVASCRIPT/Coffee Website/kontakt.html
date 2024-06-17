@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENY</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+<body id="bodyKontakt">
+    	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+        <img src="Bilder/Logo.png" class="logo">
+        <!-- linker sidene sammen -->
+        <div id="divLinker">
+          <a href="velkommen.html">Hjem</a>
+          <a href="Index.html">Meny</a>
+          <a href="bestilling.html">Bestill her</a>
+          <a href="kontakt.html" style="border-bottom: 2px solid #5C3E2A;">Kontakt oss</a> <!-- Når du er på denne siden er det en brun understrek på navbaren -->
+         
+          <input type="text" placeholder="Søk her" id="inpSok">
+             <button type="submit" id="btnSok" onclick="oppdater()">Søk</button> <!-- Funksjonen sok() kjøres når knappen trykkes --> 
+        </div>
+      </div>
+      <!----------------------------------------->
+
+    <h1 id="h1Kontakt">Kontakt oss</h1>
+    <p class="pKontakt">Har du lyst til å komme i kontakt med oss?</p>
+    <p class="pKontakt">Fyll ut dette skjemaet så svarer vi deg snarest mulig</p>
+    <!-- --------------------- Kontakt skjema --------------------------------------- --> 
+    <form id="formKontakt">
+      <fieldset> <!-- Bruker for å gruppere elementer inne i skjeamet --> 
+        <label class="labelKontakt" for="fornavn">Skriv Inn Din Fornavn <input id="fornavn" class="inputKontakt" name="fornavn" type="text" required></label> <!-- Input og Label element som har samme id --> 
+        <label class="labelKontakt" for="etternavn">Skriv Inn Din Etternavn <input id="etternavn" class="inputKontakt" name="etternavn" type="text" required></label> <!-- Required gjør at man må skrive noe i dette feltet --> 
+        <label class="labelKontakt" for="email">Skriv Inn Din Email: <input id="email" class="inputKontakt" name="email" type="email" required></label>
+      </fieldset>
+      <fieldset>
+        <label class="labelKontakt" for="kunde"><input id="medlem" type="radio" name="medlem" class="radioKontakt" checked> Medlem</label>
+        <label class="labelKontakt" for="ikke-medlem"><input id="ikke-medlem" type="radio" name="medlem" class="radioKontakt"> Ikke Medlem</label>
+        <label class="labelKontakt" for="posten">
+          <input id="posten" type="checkbox" name="posten" class="radioKontakt"> Send Svaret Til Posten Min <b>(39kr)</b></a> <!-- fet skrift --> 
+        </label>
+      </fieldset>
+      <fieldset>
+        <label class="labelKontakt" for="LastBilde">Last Opp Et Bilde: <input id="LastBilde" class="inputKontakt" type="file" name="file"></label>
+        <label class="labelKontakt" for="Alder">Skriv Inn Ditt Nummer (47+): <input id="Alder" class="inputKontakt" type="number" name="age" minlength="8" required></label>
+        <label class="labelKontakt" for="selectKontakt">Hva Gjelder Dette?
+          <select id="selectKontakt" name="selectKontakt" required> <!-- Nedtrekksliste for hvorfor man kontakter --> 
+            <option value="">(Velg en)</option>
+            <option value="1">Klage</option>
+            <option value="2">Levering</option>
+            <option value="3">Jobb</option>
+            <option value="4">Gavekort</option>
+            <option value="5">Annet</option>
+          </select>
+        </label>
+        <label class="labelKontakt" for="bio">Saken Din:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Jeg heter (navn) og er misfornøyd med..."></textarea> <!-- Tekstboks man kan skrive i --> 
+        </label>
+      </fieldset>
+      <input type="submit" id="submitKontakt"> <!-- Submit knapp for å sende inn skjemaet --> 
+    </form>
+
+
+    <script type="text/javascript" src="kontaktScript.js"></script> <!-- linker script filen til html -->
+</body>
+</html>

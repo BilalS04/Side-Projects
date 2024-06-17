@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENY</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body id="bodyVelkommen">
+	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+	  <img src="Bilder/Logo.png" class="logo">
+	  <!-- linker sidene sammen -->
+      <div id="divLinker">
+        <a href="velkommen.html" style="border-bottom: 2px solid #5C3E2A;">Hjem</a> <!-- Når du er på denne siden er det en liten brun understrek på navbaren -->
+        <a href="Index.html">Meny</a>
+        <a href="bestilling.html">Bestill her</a>
+        <a href="kontakt.html">Kontakt oss</a>
+       
+	    <input type="text" placeholder="Søk her" id="inpSok">
+   	    <button type="submit" id="btnSok" onclick="oppdater()">Søk</button> <!-- Funksjonen sok() kjøres når knappen trykkes --> 
+      </div>
+	</div>
+	<!----------------------------------------->
+	<div id="divVelkommen">
+		<h1 id="h1Velkommen">Velkommen til Kaffebryggeriet</h1>
+
+		<p class="pVelkommen">Vi er begeistret for å introdusere deg til vår kaffebar, som tilbyr enestående service og bekvemmelighet i hele Bergen</p>
+		<p class="pVelkommen">Bli med å smak på vår kaffe laget av ferske kaffebønner</p>
+
+		<img src="Bilder/velkommen.gif" id="imgVelkommen">
+	</div>
+
+	<div class="divSections" id="section1">
+		<button id="btnAapningstider"><a href="#section2" class="aSections">Vår plassering</a></button> <!-- Knapp som gjør at du går ned til plasseing diven --> 
+		<h2 id="h2Aapningstider">Åpningstider</h2>
+		<ul id="ulAapningstider"> <!-- Liste med åpningstider --> 
+			<li>Mandag 08 - 20</li>
+			<li>Tirsdag 08 - 20</li>
+			<li>Onsdag 08 - 20</li>
+			<li>Torsdag 08 - 20</li>
+			<li>Fredag 08 - 20</li>
+			<li>Lørdag 08 - 16</li>
+			<li>Søndag (STENGT)</li>
+		</ul>
+	  </div>
+	  
+	  <div class="divSections" id="section2">
+		<button id="btnPlassering"><a href="#section1" class="aSections">Åpningstider</a></button> <!-- Knapp som gjør at du går ned til åpningstid diven -->
+		<h2 id="h2Plassering">Vår Plassering</h2>
+		<div id="divImgPlassering">
+			<img src="Bilder/butikk.jpg" id="imgButikk">
+		</div>
+		<div id="divKart">
+			<h3 id="h3Plassering">Bryggen 5A, 5003 Bergen</h3>
+			<img src="Bilder/kart.jpg" id="imgKart">
+		</div>
+	  </div>
+	
+	<script type="text/javascript" src="script.js"></script> <!-- linker script filen til html -->
+</body>
+</html>

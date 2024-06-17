@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENY</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body id="bodyBestilling">
+    <!-------------------- NAVBAR --------------------->
+    <div class="navbar">
+        <img src="Bilder/Logo.png" class="logo">
+        <!-- linker sidene sammen -->
+        <div id="divLinker">
+          <a href="velkommen.html">Hjem</a>
+          <a href="Index.html">Meny</a>
+          <a href="bestilling.html" style="border-bottom: 2px solid #5C3E2A;">Bestill her</a> <!-- Når du er på denne siden er det en liten brun understrek på navbaren -->
+          <a href="kontakt.html">Kontakt oss</a>
+         
+          <input type="text" placeholder="Søk her" id="inpSok2">
+             <button type="submit" id="btnSok" onclick="oppdater()">Søk</button> <!-- Funksjonen oppdater() kjøres når knappen trykkes --> 
+        </div>
+      </div>
+      <!----------------------------------------->
+	<main>
+		<section>
+			<h2 id="h2Bestilling">Våre Produkter</h2>
+			<ul id="produkter"> <!-- Liste med produkter som kan bestilles --> 
+				<li>
+					<img src="Bilder/kaffe1.jpg" class="imgProdukter">
+					<p class="produkt-navn">French Vanilla</p> <!-- Egen class for navnet til produktet --> 
+					<p class="produkt-pris">30 kr</p> <!-- Egen class for prisen til produktet --> 
+					<button onclick="frenchVanilla()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen frenchVanilla() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/kaffe2.jpg" class="imgProdukter">
+					<p class="produkt-navn">Caramel Macchiato</p>
+					<p class="produkt-pris">37 kr</p>
+					<button onclick="caramelMacchiato()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen caramelMacchiato() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/kaffe3.jpg" class="imgProdukter">
+					<p class="produkt-navn">Pumpkin Spice</p>
+					<p class="produkt-pris">35 kr</p>
+					<button onclick="pumpkinSpice()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen pumpkinSpice() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/kaffe4.jpg" class="imgProdukter">
+					<p class="produkt-navn">Hazelnut</p>
+					<p class="produkt-pris">40 kr</p>
+					<button onclick="hazelnut()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen hazelnut() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/kaffe5.jpg" class="imgProdukter">
+					<p class="produkt-navn">Mocha</p>
+					<p class="produkt-pris">45 kr</p>
+					<button onclick="mocha()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen mocha() kjøres når knappen trykkes --> 
+				</li>
+                <li>
+					<img src="Bilder/dessert1.jpg" class="imgProdukter">
+					<p class="produkt-navn">Donut</p>
+					<p class="produkt-pris">15 kr</p>
+					<button onclick="donut()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen donut() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/dessert2.jpg" class="imgProdukter">
+					<p class="produkt-navn">Cherry Pie</p>
+					<p class="produkt-pris">27 kr</p>
+					<button onclick="cherryPie()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen cherryPie() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/dessert3.jpg" class="imgProdukter">
+					<p class="produkt-navn">Cheesecake</p>
+					<p class="produkt-pris">30 kr</p>
+					<button onclick="cheesecake()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen cheesecake() kjøres når knappen trykkes --> 
+				</li>
+				<li>
+					<img src="Bilder/dessert4.jpg" class="imgProdukter">
+					<p class="produkt-navn">Cinnamon Roll</p>
+					<p class="produkt-pris">25 kr</p>
+					<button onclick="cinnamonRoll()" class="btnBestill">Legg til handlekurv</button> <!-- Funksjonen cinnamonRoll() kjøres når knappen trykkes --> 
+				</li>
+			</ul>
+		</section>
+        <div id="divHandlekurv"> <!-- En handlekurv som vises når en prodkukt blir trykket på --> 
+            <h3 id="h3Bestill">Handlekurven Din:</h3>
+            <p id="pHandlekurv">0 kr</p>
+            <button id="btnBetal" onclick="oppdater()">Bestill</button> <!-- Funksjonen oppdater() kjøres når knappen trykkes --> 
+        </div>
+	</main>
+
+    <script type="text/javascript" src="script.js"></script> <!-- linker script filen til html -->
+</body>
+</html>

@@ -1,0 +1,417 @@
+/* ////////////////////   Navigasjonsbaren - CSS //////////////////////////////*/
+.navbar {
+  position: relative;
+  top: -8px;
+  display: flex; /* Navbar skal være organisert i en flex-boks som gjør det enklere å justere layouten og plasseringen av elementene */
+  align-items: center; /* Elementene skal være sentrert vertikalt */
+  height: 100px;
+  background-color: burlywood;
+  color: #5C3E2A;
+  padding: 0 20px; /*0px fra top og bunn, 20px fra venstre og høyre */
+  border-bottom: 4px solid #5C3E2A; /* En hvit strek under hele navbaren */
+}
+
+.logo {
+  position: relative;
+  top: -10px;
+  left: 80px;
+  width: 200px; /* Bredden til elementet */
+  height: 120px; /* Høyden til elementet */
+  margin-right: 450px; /* Mellomrommet fra høyre mellom logoen og linksene */
+}
+
+#divLinker {
+  position: relative;
+  left: -50px;
+}
+
+.navbar a { /* Linksene i navbaren */
+  color: #5C3E2A;
+  text-decoration: none; /* Blå fargen som vises på linken går vekk */
+  margin-right: 50px;
+  font-size: 20px; /* Størrelsen til teksten */
+}
+
+.navbar a:hover { /* Når musepekeren blir holdt over linksene i navbaren skal det under skje */
+  border-bottom: 2px solid #5C3E2A; /* En liten brun understrek vises */
+}
+
+#inpSok { 
+  position: relative;
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#btnSok {
+  width: 70px;
+  height: 30px;
+  background-color: burlywood;
+  color: black;
+  border: 4px solid #5C3E2A; 
+  cursor: pointer; /* Musepekeren skifter form når den blir holdt over knappen */
+}
+ /* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////   Hjem(velkommen.html) - CSS //////////////////////////////*/
+#bodyVelkommen {
+  background-color: burlywood;
+  font-family: Impact, serif;
+}
+
+#h1Velkommen {
+  position: relative;
+  top: 190px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.pVelkommen {
+  position: relative;
+  text-align: center;
+  top: 195px;
+  font-size: 18px;
+}
+
+#imgVelkommen {
+  position: relative;
+  top: 205px;
+  left: 530px;
+  height: 200px;
+  width: 450px;
+}
+
+#divVelkommen {
+  position: relative;
+  top: -60px;
+}
+
+html {
+  scroll-behavior: smooth; /* Bla ned/opp effekten går sakte og ikke med engang*/
+}
+
+.divSections {
+  position: relative;
+  top: 500px;
+}
+
+#section1 {
+  position: relative;
+  top: 500px;
+  height: 600px;
+}
+
+#section2 {
+  position: relative;
+  top: 700px;
+  height: 600px;
+}
+
+#ulAapningstider { /* Liste til åpningstider */
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Gjør at det vises nedoover */
+}
+
+#btnPlassering, #btnAapningstider { /* Gjelder for begge ID-ene */
+  position: relative;
+  background-color: #5C3E2A;
+  height: 35px;
+  width: 200px;
+}
+
+#btnPlassering {
+  top: -1100px;
+  left: 500px;
+}
+#btnAapningstider {
+  top: -300px;
+  left: 830px;
+}
+
+#imgButikk {
+  position: relative;
+  top: 30px;
+  left: -100px;
+  float: right;
+  height: 400px;
+  width: 700px;
+}
+
+#imgKart {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  left: 200px;
+}
+
+#h2Plassering {
+  padding: 5px;
+  border-bottom: 3px solid black;
+}
+
+#h2Aapningstider {
+  padding: 5px;
+  border-bottom: 3px solid black;
+}
+
+#h3Plassering {
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.aSections {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////   Meny(Index.html) - CSS //////////////////////////////*/
+#bodyMeny {
+    background-image: url(Bilder/bakgrunn.jpg); /* Bakgrunnsbilde */
+    font-family: Impact, serif;
+  }
+
+#h1Meny {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#h2Meny {
+  font-size: 30px;
+}
+
+.pGrunnlagt {
+  font-style: italic;
+  text-align: center;
+}
+
+#h1Meny, #h2Meny {
+  text-align: center;
+}
+
+#divMeny {
+  width: 80%;
+  position: relative;
+  top: 50px;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 500px;
+} 
+
+.imgMeny {
+  display: block; /* Plasserer bildene i midten */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hrMeny, #hrMeny2 {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+#hrMeny2 {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+  text-align: center;
+}
+
+.vare p {
+  display: inline-block; /* Gjør at tekstene vises ved siden av hverandre */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.flavor, .dessert {
+  text-align: left; /* Plasserer teksten til venstre */
+  width: 75%;
+}
+
+.pris {
+  text-align: right; /* Plasserer teksten til høyre */
+  width: 25%;
+}
+
+footer {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+#aMeny {
+  color: black;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////   Bestill her(bestilling.html) - CSS //////////////////////////////*/
+#inpSok2 { 
+  width: 200px;
+  height: 25px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#bodyBestilling {
+  background-color: burlywood;
+  font-family: Impact, serif;
+}
+
+li { /* Liste med varene */
+  list-style: none; /* Får vekk punktet som vises begynnelsen av listen */
+  display: inline-block; /* Vises ved siden av hverandre */
+  margin: 25px 60px 40px 0px;
+}
+
+.produkt-navn, .produkt-pris {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.produkt-pris {
+  font-family: Impact, serif;
+}
+
+.btnBestill {
+  position: relative;
+  left: 80px;
+  background-color: #5C3E2A;
+  color: white;
+  height: 30px;
+}
+
+.imgProdukter {
+  width: 300px;
+  height: 200px;
+}
+
+#divHandlekurv { /* Handlekurven som vises nede til høyre */
+  position: fixed; /* Blir på et sted uansett om brukeren blar ned/opp */
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 160px;
+  background-color: rgb(246, 243, 243); /* Annen måte å få fargen litt mørkere enn hvit */
+  border: 1px solid darkgray;
+  border-radius: 5px; /* Får kantene til å bli mer runde */
+  display: none; /* Skuler diven til brukeren har valgt noe */
+}
+
+#h3Bestill {
+  text-align: center;
+}
+
+#btnBetal {
+  position: relative;
+  background-color: #5C3E2A;
+  color: white;
+  height: 30px;
+  left: 65px;
+  top: 10px;
+  width: 80px;
+  cursor: pointer; /* Musepekeren bytter form til klikkeform */
+}
+
+#pHandlekurv {
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////   Kontakt oss(kontakt.html) - CSS //////////////////////////////*/
+#bodyKontakt {
+  width: 100%;
+  margin: 0; /* Gjør at siden ikke kan blas til sidene */
+  background-color: burlywood;
+  color: #5C3E2A;
+  font-family: Impact, serif;
+  font-size: 17px;
+}
+
+#h1Kontakt, .pKontakt {
+  font-family: Impact, serif;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#formKontakt {
+  width: 450px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+fieldset {
+  border: none;
+  padding: 25px 0;
+  border-bottom: 3px solid brown;
+}
+
+fieldset:last-of-type { /* Gjelper for siste fieldset som blir brukt */
+  border-bottom: none; 
+}
+
+.labelKontakt {
+  display: block; /* Viser det nedover */
+  margin: 10px 0;
+}
+
+.inputKontakt, #selectKontakt {
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 22px;
+}
+
+textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 75px;
+}
+
+.inputKontakt, textarea {
+  background-color: #5C3E2A;
+  border: 1px solid #5C3E2A;
+  color: #ffffff;
+}
+
+.radioKontakt {
+  margin: 0 6px 0 0;
+}
+
+#submitKontakt{ /* Submit knappen */
+  display: block;
+  width: 60%;
+  margin: 40px auto;
+  height: 40px;
+  font-size: 18px;
+  background-color:  #5C3E2A;;
+  border-color: brown;
+  min-width: 300px;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+/* ////////////////////////////////////////////////////////////////////////// */

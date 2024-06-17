@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENY</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body id="bodyMeny"></body>
+  	<!-------------------- NAVBAR --------------------->
+	<div class="navbar">
+	  <img src="Bilder/Logo.png" class="logo">
+	  <!-- linker sidene sammen -->
+      <div id="divLinker">
+        <a href="velkommen.html">Hjem</a>
+        <a href="Index.html" style="border-bottom: 2px solid #5C3E2A;">Meny</a> <!-- Når du er på denne siden er det en liten brun understrek på navbaren -->
+        <a href="bestilling.html">Bestill her</a>
+        <a href="kontakt.html">Kontakt oss</a>
+       
+	    <input type="text" placeholder="Søk her" id="inpSok">
+   	    <button type="submit" id="btnSok" onclick="oppdater()">Søk</button> <!-- Funksjonen oppdater() kjøres når knappen trykkes --> 
+      </div>
+	</div>
+	<!----------------------------------------->
+    <!-- Menyen  --------------------------------------------------------------------------------- -->
+    <div id="divMeny">
+      <main>
+        <h1 id="h1Meny">Kaffebryggeriet - Meny</h1>
+        <p class="pGrunnlagt">Grunnlagt - 2023</p>
+        <hr id="hrMeny"> <!-- Understrek -->
+        <section> <!-- Egen seksjon for Kaffe valgene -->
+          <h2 id="h2Meny">Kaffe</h2>
+          <img src="Bilder/coffee.jpg" class="imgMeny">
+          <article class="vare"> <!-- Tar det i en element også fortsetter jeg å putte <p> elementer i den --> 
+            <p class="flavor">French Vanilla</p><p class="pris">30 kr</p> <!-- Egen class til smak og egen class til pris --> 
+          </article>
+          <article class="vare">
+            <p class="flavor">Caramel Macchiato</p><p class="pris">37 kr</p>
+          </article>
+          <article class="vare">
+            <p class="flavor">Pumpkin Spice</p><p class="pris">35 kr</p>
+          </article>
+          <article class="vare">
+            <p class="flavor">Hazelnut</p><p class="pris">40 kr</p>
+          </article>
+          <article class="vare">
+            <p class="flavor">Mocha</p><p class="pris">45 kr</p>
+          </article>
+        </section>
+        <section> <!-- Egen seksjon for Dessert valgene -->
+          <h2 id="h2Meny">Dessert</h2>
+          <img src="Bilder/pie.jpg" class="imgMeny">
+          <article class="vare">
+            <p class="dessert">Donut</p><p class="pris">15 kr</p>
+          </article>
+          <article class="vare">
+            <p class="dessert">Cherry Pie</p><p class="pris">27 kr</p>
+          </article>
+          <article class="vare">
+            <p class="dessert">Cheesecake</p><p class="pris">30 kr</p>
+          </article>
+          <article class="vare">
+            <p class="dessert">Cinnamon Roll</p><p class="pris">25 kr</p>
+          </article>
+        </section>
+      </main>
+      <hr id="hrMeny2"> <!-- Understrek -->
+      <footer> <!-- Helt nede på siden som avslutter siden --> 
+        <p>
+          <a href="velkommen.html" id="aMeny" target="_blank">Besøk Oss</a> <!-- Link som åpner i ny fane -->
+        </p>
+        <p class="address">Bryggen 5A, 5003 Bergen.</p>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script> <!-- linker script filen til html -->
+  </body>
+</html>
