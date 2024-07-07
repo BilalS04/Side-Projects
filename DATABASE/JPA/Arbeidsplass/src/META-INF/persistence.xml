@@ -6,17 +6,17 @@
              
 	<persistence-unit name="ansattPersistenceUnit" transaction-type="RESOURCE_LOCAL">
 
-		<class>no.dat107.oblig3.Ansatt</class>
-		<class>no.dat107.oblig3.Avdeling</class>
-		<class>no.dat107.oblig3.Prosjekt</class>
-		<class>no.dat107.oblig3.Prosjektdeltagelse</class>
+		<class>no.arbeidsplass.Entiteter.Ansatt</class>
+		<class>no.arbeidsplass.Entiteter.Avdeling</class>
+		<class>no.arbeidsplass.Entiteter.Prosjekt</class>
+		<class>no.arbeidsplass.Entiteter.Prosjektdeltagelse</class>
 		
 		<properties>
 		    <!--  Generelle JPA properties -->
 			<property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://129.151.221.119:5432/678148"/>
-			<property name="jakarta.persistence.jdbc.user" value="678148"/>
-		    <property name="jakarta.persistence.jdbc.password" value="Ha1FinDagIDag!"/>
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://111.111.111.111:1111/XXXXXX"/>
+			<property name="jakarta.persistence.jdbc.user" value="XXXXXX"/>
+		    <property name="jakarta.persistence.jdbc.password" value=""/>
 			
 			<!--  EclipseLink properties -->
             <!--  Se https://wiki.eclipse.org/EclipseLink/Examples/JPA/Logging -->
