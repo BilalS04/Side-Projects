@@ -1,4 +1,4 @@
-package no.arbeidsplass.Entiteter;
+package no.arbeidsplass.entiteter;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

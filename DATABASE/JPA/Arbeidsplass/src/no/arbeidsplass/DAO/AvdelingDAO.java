@@ -7,8 +7,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
-import no.arbeidsplass.Entiteter.Ansatt;
-import no.arbeidsplass.Entiteter.Avdeling;
+import no.arbeidsplass.entiteter.Ansatt;
+import no.arbeidsplass.entiteter.Avdeling;
 
 public class AvdelingDAO {
 	

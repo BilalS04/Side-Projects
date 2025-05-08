@@ -6,8 +6,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import no.arbeidsplass.Entiteter.Prosjekt;
-import no.arbeidsplass.Entiteter.Prosjektdeltagelse;
+import no.arbeidsplass.entiteter.Prosjekt;
+import no.arbeidsplass.entiteter.Prosjektdeltagelse;
 
 public class ProsjektDAO {
 	

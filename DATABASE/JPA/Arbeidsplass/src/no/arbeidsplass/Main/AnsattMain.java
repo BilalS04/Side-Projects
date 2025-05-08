@@ -5,8 +5,8 @@ import java.util.List;
 
 import no.arbeidsplass.DAO.AnsattDAO;
 import no.arbeidsplass.DAO.AvdelingDAO;
-import no.arbeidsplass.Entiteter.Ansatt;
-import no.arbeidsplass.Entiteter.Avdeling;
+import no.arbeidsplass.entiteter.Ansatt;
+import no.arbeidsplass.entiteter.Avdeling;
 
 public class AnsattMain {
 	

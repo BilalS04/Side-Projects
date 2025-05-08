@@ -5,8 +5,8 @@ import java.util.List;
 import no.arbeidsplass.DAO.AnsattDAO;
 import no.arbeidsplass.DAO.ProsjektDAO;
 import no.arbeidsplass.DAO.ProsjektdeltagelseDAO;
-import no.arbeidsplass.Entiteter.Ansatt;
-import no.arbeidsplass.Entiteter.Prosjektdeltagelse;
+import no.arbeidsplass.entiteter.Ansatt;
+import no.arbeidsplass.entiteter.Prosjektdeltagelse;
 
 public class ProsjektdeltagelseMain {
 	

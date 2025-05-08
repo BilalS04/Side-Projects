@@ -7,7 +7,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
-import no.arbeidsplass.Entiteter.Prosjektdeltagelse;
+import no.arbeidsplass.entiteter.Prosjektdeltagelse;
 
 public class ProsjektdeltagelseDAO {
 	private static EntityManagerFactory emf =

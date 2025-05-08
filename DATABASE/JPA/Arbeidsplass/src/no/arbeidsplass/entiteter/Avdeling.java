@@ -1,4 +1,4 @@
-package no.arbeidsplass.Entiteter;
+package no.arbeidsplass.entiteter;
 
 import java.util.ArrayList;
 import java.util.List;

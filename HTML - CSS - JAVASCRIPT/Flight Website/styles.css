@@ -24,8 +24,8 @@ h2 {
 
 .logo {
   width: 300px; /* Bredden til elementet */
-  height: 170px; /* Høyden til elementet */
-  margin-right: 300px; /* Mellomrommet fra høyre mellom logoen og linksene */
+  height: 100px; /* Høyden til elementet */
+  margin-right: 500px; /* Mellomrommet fra høyre mellom logoen og linksene */
 }
 
 .navbar a { /* Linksene i navbaren */

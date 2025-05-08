@@ -2,8 +2,8 @@ package no.arbeidsplass.Main;
 
 import no.arbeidsplass.DAO.AnsattDAO;
 import no.arbeidsplass.DAO.AvdelingDAO;
-import no.arbeidsplass.Entiteter.Ansatt;
-import no.arbeidsplass.Entiteter.Avdeling;
+import no.arbeidsplass.entiteter.Ansatt;
+import no.arbeidsplass.entiteter.Avdeling;
 
 public class AvdelingMain {
 	private static AvdelingDAO avdelingDAO = new AvdelingDAO();

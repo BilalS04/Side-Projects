@@ -3,8 +3,8 @@ package no.arbeidsplass.Main;
 import java.util.List;
 
 import no.arbeidsplass.DAO.ProsjektDAO;
-import no.arbeidsplass.Entiteter.Prosjekt;
-import no.arbeidsplass.Entiteter.Prosjektdeltagelse;
+import no.arbeidsplass.entiteter.Prosjekt;
+import no.arbeidsplass.entiteter.Prosjektdeltagelse;
 
 public class ProsjektMain {
 	private static ProsjektDAO prosjektDAO = new ProsjektDAO();
